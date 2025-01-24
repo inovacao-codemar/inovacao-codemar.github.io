@@ -15,21 +15,14 @@
     <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Maricá Games JAM 2025 - Inovação, Sustentabilidade e Games">
     <meta property="og:description" content="Participe do Maricá Games JAM 2025, uma maratona de desenvolvimento de jogos que promove inovação tecnológica e responsabilidade ambiental.">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630?text=Maricá+Games+JAM+2025">
-    <meta property="og:url" content="http://www.seusite.com.br">
+    <meta property="og:image" content="/imgs/mumbuquinha_pagina.jpg">
+    <meta property="og:url" content="https://inovacao-codemar.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Maricá Games JAM 2025 - Inovação, Sustentabilidade e Games">
-    <meta name="twitter:description" content="Participe do Maricá Games JAM 2025 e descubra como inovação e sustentabilidade se encontram nos games.">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630?text=Maricá+Games+JAM+2025">
-    <meta name="twitter:site" content="@maricagamesjam">
-
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32?text=Favicon">
-    <link rel="apple-touch-icon" href="https://via.placeholder.com/180x180?text=Favicon">
+    <link rel="icon" type="image/png" href="/imgs/icon_mumbuquinha.png">
+    <link rel="apple-touch-icon" href="/imgs/icon_mumbuquinha_apple.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
@@ -45,23 +38,71 @@
         header {
             background: linear-gradient(90deg, #1e90ff, #00bcd4);
             color: white;
-            padding: 0; /* Reduz o padding para dispositivos móveis */
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: sticky;
             top: 0;
             z-index: 10;
+            padding: 10px 0; /* Reduz o padding para telas menores */
         }
+
         .header-container {
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px; /* Ajusta o espaço entre imagem e texto */
+            flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas pequenas */
+            text-align: center; /* Garante que o texto fique centralizado */
         }
+
+        .header-logo {
+            width: 50px;
+            height: 50px; /* Tamanho fixo da imagem */
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
         header h1 {
             margin: 0;
-            font-size: 2.5em; /* Tamanho padrão */
+            font-size: 2em;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column; /* Imagem e texto em blocos separados */
+                gap: 10px; /* Espaçamento menor em telas menores */
+            }
+
+            .header-logo {
+                width: 50px; /* Reduz o tamanho da imagem */
+                height: 50px;
+            }
+
+            header h1 {
+                font-size: 1.8em; /* Tamanho menor para o texto */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header-container {
+                gap: 5px; /* Reduz ainda mais o espaço */
+            }
+
+            .header-logo {
+                width: 40px; /* Imagem menor para caber melhor */
+                height: 40px;
+            }
+
+            header h1 {
+                font-size: 1.5em; /* Texto menor para smartphones */
+            }
+        }
+
         /* Estilos para dispositivos móveis */
         @media (max-width: 768px) {
             header h1 {
@@ -497,6 +538,7 @@
 <body>
     <header>
         <div class="header-container">
+            <img src="imgs/personagem_mumbuquinha.png" alt="Personagem Mumbuquinha" class="header-logo">
             <h1>Maricá Games JAM 2025</h1>
         </div>
     </header>
