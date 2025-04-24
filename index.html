@@ -931,7 +931,8 @@
                     height="600" 
                     frameborder="0" 
                     marginheight="0" 
-                    marginwidth="0">
+                    marginwidth="0"
+                    style="border: none;">
                     Carregando…
                 </iframe>
             </div>
@@ -1012,21 +1013,5 @@
             <p>&copy; 2025 Maricá Games JAM. Todos os direitos reservados.</p>
         </div>
     </footer>
-    <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
-    <script>
-        window.jotformEmbedHandler("iframe[id='JotFormIFrame-250915073489060']", "https://form.jotform.com/");
-
-        const carouselTrack = document.querySelector('.carousel-track');
-        const carouselImages = Array.from(carouselTrack.children);
-        let currentIndex = 0;
-
-        function moveCarousel() {
-            currentIndex = (currentIndex + 1) % carouselImages.length; // Alterna entre as imagens
-            const imageWidth = carouselImages[0].getBoundingClientRect().width;
-            carouselTrack.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
-        }
-
-        setInterval(moveCarousel, 4000); // Troca de slide a cada 4 segundos
-    </script>
 </body>
 </html>
