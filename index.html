@@ -426,6 +426,24 @@
             box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
         }
 
+        .criteria-details {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        .criteria-details h3,
+        .criteria-details h4 {
+            color: #e9cf6f;
+            margin-top: 20px;
+        }
+
+        .criteria-details p {
+            color: #f1f1f1;
+            font-size: 1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
         /* Responsivo */
         @media (max-width: 768px) {
             .section-criteria h2 {
@@ -870,44 +888,64 @@
         <div class="criteria-container">
             <h2>🔍 Critérios de Avaliação</h2>
             <p class="criteria-subtitle">
-            Entenda como os projetos serão avaliados pela banca julgadora. Cada critério possui um peso específico na nota final.
+                Entenda como os projetos serão avaliados pela banca julgadora. Cada critério possui um peso específico na nota final.
             </p>
             <div class="criteria-cards">
-            <div class="criteria-card">
-                <span class="criteria-percent">25%</span>
-                <h3>Adaptação ao Tema</h3>
-                <p>Conexão com o tema <strong>"As Aventuras de Mumbuquinha 2.0"</strong>, criatividade e abordagem da narrativa.</p>
+                <div class="criteria-card">
+                    <span class="criteria-percent">25%</span>
+                    <h3>Adaptação ao Tema</h3>
+                    <p>Conexão com o tema <strong>"As Aventuras de Mumbuquinha 2.0"</strong>, criatividade e abordagem da narrativa.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">25%</span>
+                    <h3>Jogabilidade</h3>
+                    <p>Controles acessíveis, mecânicas bem implementadas e experiência fluida de jogo.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">20%</span>
+                    <h3>Originalidade</h3>
+                    <p>Inovação nas ideias, novos recursos e propostas únicas para o jogo.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">12%</span>
+                    <h3>Diversão</h3>
+                    <p>Capacidade do jogo entreter, engajar e cativar os jogadores.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">8%</span>
+                    <h3>Gráfico/Visual</h3>
+                    <p>Estética, identidade visual e harmonia entre os elementos gráficos.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">5%</span>
+                    <h3>Áudio</h3>
+                    <p>Qualidade da trilha sonora, efeitos sonoros e imersão sonora.</p>
+                </div>
+                <div class="criteria-card">
+                    <span class="criteria-percent">5%</span>
+                    <h3>Oficinas & Mentorias</h3>
+                    <p>Participação nas oficinas e mentorias realizadas ao longo da JAM.</p>
+                </div>
             </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">25%</span>
-                <h3>Jogabilidade</h3>
-                <p>Controles acessíveis, mecânicas bem implementadas e experiência fluida de jogo.</p>
-            </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">20%</span>
-                <h3>Originalidade</h3>
-                <p>Inovação nas ideias, novos recursos e propostas únicas para o jogo.</p>
-            </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">12%</span>
-                <h3>Diversão</h3>
-                <p>Capacidade do jogo entreter, engajar e cativar os jogadores.</p>
-            </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">8%</span>
-                <h3>Gráfico/Visual</h3>
-                <p>Estética, identidade visual e harmonia entre os elementos gráficos.</p>
-            </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">5%</span>
-                <h3>Áudio</h3>
-                <p>Qualidade da trilha sonora, efeitos sonoros e imersão sonora.</p>
-            </div>
-            <div class="criteria-card">
-                <span class="criteria-percent">5%</span>
-                <h3>Oficinas & Mentorias</h3>
-                <p>Participação nas oficinas e mentorias realizadas ao longo da JAM.</p>
-            </div>
+
+            <div class="criteria-details mt-4"> 
+                <h3>📋 Detalhamento dos Critérios</h3>
+                <p><strong>🎯 Game Design:</strong> Jogabilidade intuitiva, níveis bem estruturados e desafios criativos como puzzles, combate dinâmico ou exploração.</p>
+                <p><strong>🧭 UI/UX:</strong> Interface clara, fluida e com feedbacks adequados para guiar o jogador.</p>
+                <p><strong>🎨 Arte e Visual:</strong> Estilo gráfico coerente com a proposta do jogo, com personagens e cenários bem elaborados.</p>
+                <p><strong>🎧 Áudio Design:</strong> Trilha sonora e efeitos sonoros que enriquecem a imersão e acompanham a narrativa.</p>
+                <p><strong>🎮 Gameplay:</strong> Controles responsivos e ausência de bugs, proporcionando uma experiência de jogo agradável.</p>
+
+                <h4 class="mt-4">📌 Requisitos de Compatibilidade</h4>
+                <p>✔️ Versão funcional para computador (Windows, Intel i3, 4GB RAM)</p>
+                <p>✔️ Versão instalável para Android ou iOS (APK ou equivalente)</p>
+
+                <h4 class="mt-4">⚖️ Sistema de Avaliação</h4>
+                <p>Cada critério será avaliado de 0 a 10 pontos. A nota final será a média das avaliações dos jurados. A organização pode optar por não divulgar as notas individuais.</p>
+
+                <h4 class="mt-4">🏁 Critérios de Desempate</h4>
+                <p>- Pelo menos um integrante da equipe ser morador de Maricá</p>
+                <p>- Melhor adaptação ao tema da JAM</p>
             </div>
         </div>
     </section>
