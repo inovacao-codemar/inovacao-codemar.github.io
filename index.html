@@ -14,9 +14,24 @@
     <meta property="og:url" content="https://inovacao-codemar.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
-    <link rel="icon" type="image/png" href="/imgs/icon_mumbuquinha.png">
-    <link rel="apple-touch-icon" href="/imgs/icon_mumbuquinha_apple.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <style>
         @font-face {
             font-family: 'Pangram Medium';
@@ -35,7 +50,7 @@
 
         /* Header */
         header {
-            background: linear-gradient(90deg, #a80d9d, #e9cf6f);
+            background: linear-gradient(to right, rgb(232, 25, 110), rgb(63, 45, 191));
             color: white;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -401,6 +416,71 @@
             height: auto;
             flex: 1 1 300px;
         }
+
+        .section-downloads {
+            background: linear-gradient(to bottom, #0e1a2b, #1e2e4a);
+            padding: 60px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .downloads-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-downloads h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .downloads-subtitle {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .game-card {
+            background-color: #ffffff10;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease;
+            width: 100%;
+            max-width: 250px;
+        }
+
+        .game-card:hover {
+            transform: scale(1.03);
+        }
+
+        .game-card h3 {
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            color: #e9cf6f;
+        }
+
+        .download-btn {
+            width: 150px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9XJDW3KQN"></script>
@@ -414,7 +494,7 @@
 <body>
     <header>
         <div class="header-container">
-            <img src="imgs/personagem_mumbuquinha.png" alt="Personagem Mumbuquinha" class="header-logo">
+            <img src="imgs/icone_mumbuquinha_head-128.png" alt="Personagem Mumbuquinha" class="header-logo">
             <h1>Maricá Games JAM 2025</h1>
         </div>
     </header>
@@ -448,6 +528,66 @@
             <p style="color: #ffffff; font-weight: 500; margin-top: 20px;">
                 A Codemar agradece a todos que fizeram parte dessa jornada incrível. Nos vemos no próximo Maricá Games JAM! 💡
             </p>
+        </div>
+    </section>
+
+    <section class="section-downloads" id="downloads">
+        <div class="downloads-container">
+            <h2>🎮 Jogos Finalistas para Download</h2>
+            <p class="downloads-subtitle">Em ordem alfabética, confira e jogue as criações incríveis dos finalistas do Maricá Games JAM 2025!</p>
+
+            <div class="games-grid">
+                <div class="game-card">
+                    <h3>Codenergy</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EQfzRGauTYFNoalvBWDS0PQBr2OfeHg-9ZCu9HvFefGlzA?e=OkPnZa"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/Eadhk0DtH0tBgBq9NQhYcocBJ3Lh5NVZnFqHySX6G_JeYQ?e=bLkWJB"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Cumbuca Labs</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EfMMtIKhRSJCou1YmHVjsUUB2hLTU2z5oVDG98bpG1EASw?e=0swmhA"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EYp39W-3QA9Lk_LhPf1Plp0BC6igEyKSxUGL1VEuHEEDzg?e=8zMFAa"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>D+1 Design & Jogos</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EZQHaFhXN65CrCMOokvtGawBWZYx1YE7XoBW6fUiXKQ9Jw?e=a29TvA"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/ERReNts_GRVJg-FMb15EBg4BPjg3wEPunmPmOWM_tHkDTQ?e=XcTaxf"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Dream Atchim</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/ERjXyJpWNTdNhQcCfE-Nc9AB3KIPwY3H2v9sDqo-KtXc-w?e=zBwIPW"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EQz_mfD9t1ZGtKHTLCa9x9EBMrDnU2HdNYMR45ZM1azmWg?e=vAVUZT"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Eclipse Studio</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EeVaeoa4K8dIokOGkaek-hgBwQtuY0ix-_ln4UrEKWDUkQ?e=lNXIft"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EdnuKOrjnLRMo8FNvVyUD8MBHAp8_DntOctwrzMmtbZPpw?e=YD2k6J"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>EH!EH!EH! Artes</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/ERJq_hwmevRElO_xtD44lucBNggcirLF0vtpvrEwB4B_wQ?e=l8IPpn"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/ERaJOnt11B5Anaja-iLgXPgB2hHksGfNh2xLS0h1e89pJA?e=YptXhI"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Equipe de Robótica</h3>
+                    <a target="_blank" href="#"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/Ec43Vdbo4GVHiQFzzpxC7usBzG1avcMAX2r2LkwPizrgLg?e=Bfc31M"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>GameKStudio</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/Ecp3D2PWA8lKsKrtKXbMrF0B6kxSiIW3xdyglvr7jPLM3w?e=zopaap"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/ETxwSTKuEBNMj8pkfeCrZiIBUCEzHD05KzM6G8rmhjJuJQ?e=XOGTlL"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Nightshift</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EbLFGkw7IRVGiJ9WwUIhelsBc1LqWt7W0TJ08CasUHVeOQ?e=szQefP"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EYOUNF7hxhFCgdh8BApWY_gB-pp3LhiuA-l5K4JfTWqFpA?e=E4oMAr"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+                <div class="game-card">
+                    <h3>Reach Games</h3>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EUz8k00_vedNqx5KiMMZezUBs4BwD4Jo3oFjjJqXfrTX5A?e=nnRKQq"><img src="imgs/download-apk.png" alt="Download APK" class="download-btn"></a>
+                    <a target="_blank" href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EWoHUtzybFRPmgln-aeS59sBh2JfYQ7EHYq9IK4iNYJM6Q?e=bFwjaV"><img src="imgs/download-exe.png" alt="Download EXE" class="download-btn"></a>
+                </div>
+            </div>
         </div>
     </section>
 
