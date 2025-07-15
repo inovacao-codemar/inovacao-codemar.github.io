@@ -25,6 +25,7 @@
             color: #f4f4f4;
             line-height: 1.6;
         }
+
         /* Header */
         header {
             background: linear-gradient(90deg, #a80d9d, #e9cf6f);
@@ -59,6 +60,7 @@
             letter-spacing: 1px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
+
         /* Responsividade */
         @media (max-width: 768px) {
             .header-container {
@@ -89,6 +91,7 @@
                 font-size: 1.5em;
             }
         }
+
         /* Estilos para dispositivos móveis */
         @media (max-width: 768px) {
             header h1 {
@@ -104,6 +107,7 @@
                 font-size: 1.5em;
             }
         }
+
         /* Hero */
         .hero {
             position: relative;
@@ -217,90 +221,7 @@
                 padding: 8px 16px;
             }
         }
-        /* About Section */
-        .section-about {
-            padding: 50px 20px;
-            text-align: center;
-            background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-                        url('./imgs/bg_section_about.png') no-repeat center center;
-            background-size: cover;
-            color: rgb(25, 25, 25);
-        }
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            padding: 0 20px;
-        }
-        @media (min-width: 768px) {
-            .about-container {
-                grid-template-columns: 1fr 1fr;
-                align-items: center;
-            }
-        }
-        .about-text {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .about-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            color: #0b0b0b;
-        }
-        .about-text p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            color: #212121;
-            margin-bottom: 20px;
-        }
-        .about-text .highlight {
-            color: #0b0b0b;
-            font-weight: bold;
-        }
-        /* Schedule Section */
-        .section-schedule {
-            padding: 60px 20px;
-            background: linear-gradient(145deg, #1b2c44, #0e1a2b);
-            color: #ffffff;
-            text-align: center;
-        }
-        .schedule-container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .schedule-title {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #e9cf6f;
-        }
-        .schedule-list {
-            list-style: none;
-            padding: 0;
-            text-align: left;
-            font-size: 1.2em;
-            line-height: 2;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-        }
-        .schedule-list li {
-            margin-bottom: 10px;
-            padding-left: 10px;
-            border-left: 4px solid #a80d9d;
-        }
-        @media (max-width: 768px) {
-            .schedule-title {
-                font-size: 2em;
-            }
 
-            .schedule-list {
-                font-size: 1em;
-            }
-        }
         /* Section Awards */
         .section-awards {
             padding: 60px 20px;
@@ -357,213 +278,7 @@
                 margin: 0 auto;
             }
         }
-        /* Section Criteria */
-        .section-criteria {
-            padding: 60px 20px;
-            background: #1a2b3c;
-            color: white;
-            text-align: center;
-        }
-        .criteria-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
 
-        .section-criteria h2 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #e9cf6f;
-        }
-
-        .criteria-subtitle {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            color: #f4f4f4;
-        }
-
-        .criteria-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .criteria-card {
-            background: rgba(255, 255, 255, 0.05);
-            border-left: 5px solid #a80d9d;
-            border-radius: 15px;
-            padding: 20px 25px;
-            text-align: left;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease;
-        }
-
-        .criteria-card:hover {
-            transform: scale(1.02);
-        }
-
-        .criteria-card h3 {
-            font-size: 1.3em;
-            color: #e9cf6f;
-            margin-top: 10px;
-        }
-
-        .criteria-card p {
-            font-size: 1em;
-            color: #f1f1f1;
-            line-height: 1.6;
-        }
-
-        .criteria-percent {
-            display: inline-block;
-            background: #e9cf6f;
-            color: #0e1a2b;
-            font-weight: bold;
-            padding: 5px 12px;
-            border-radius: 50px;
-            font-size: 0.9em;
-            margin-bottom: 8px;
-            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
-        }
-
-        .criteria-details {
-            text-align: left;
-            margin-top: 40px;
-        }
-
-        .criteria-details h3,
-        .criteria-details h4 {
-            color: #e9cf6f;
-            margin-top: 20px;
-        }
-
-        .criteria-details p {
-            color: #f1f1f1;
-            font-size: 1em;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        /* Responsivo */
-        @media (max-width: 768px) {
-            .section-criteria h2 {
-                font-size: 2em;
-            }
-            .criteria-subtitle {
-                font-size: 1.1em;
-            }
-        }
-
-        /* Section Mentors */
-        .section-mentors {
-            padding: 60px 20px;
-            background: linear-gradient(to bottom, #ffffff, #f4f4f4);
-            color: #0e1a2b;
-            text-align: center;
-        }
-
-        .mentors-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .section-mentors h2 {
-            font-size: 2.8em;
-            margin-bottom: 15px;
-            color: #a80d9d;
-        }
-
-        .mentors-subtitle {
-            font-size: 1.2em;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        .mentor-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 30px;
-            justify-content: center;
-        }
-
-        .mentor-card {
-            background: white;
-            border-left: 6px solid #e9cf6f;
-            border-radius: 15px;
-            padding: 25px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease;
-            text-align: left;
-        }
-
-        .mentor-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .mentor-card h3 {
-            font-size: 1.4em;
-            color: #a80d9d;
-            margin-bottom: 10px;
-        }
-
-        .mentor-card p {
-            font-size: 1em;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Responsivo */
-        @media (max-width: 768px) {
-            .section-mentors h2 {
-                font-size: 2em;
-            }
-            .mentors-subtitle {
-                font-size: 1.1em;
-            }
-        }
-        /* Section Form */
-        .sponsors-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        } */
-
-        .section-form {
-            padding: 50px 20px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            text-align: center;
-        }
-        .form-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .section-form h2 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-            color: #e9cf6f;
-            text-align: center;
-        }
-        .section-form p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 30px;
-            text-align: center;
-        }
-        .section-form .highlight {
-            color: #e9cf6f;
-            font-weight: bold;
-        }
-        .jotform-form iframe {
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            padding-bottom: -200px;
-        }
         /* Sponsors Section */
         .section-sponsors {
             padding: 60px 20px;
@@ -621,104 +336,6 @@
             text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
         }
 
-
-        /* Contact Section */
-        .section-contact {
-            padding: 50px 20px;
-            background: #123456;
-            color: white;
-            text-align: center;
-        }
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-            overflow-wrap: break-word;
-            word-wrap: break-word;
-            word-break: break-word;
-        }
-        .section-contact h2 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-        .section-contact p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-        .section-contact .highlight {
-            color: #e9cf6f;
-            font-weight: bold;
-        }
-        .contact-details {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-align: left;
-        }
-        .contact-item p {
-            font-size: 1.2em;
-            margin: 0;
-        }
-        .contact-item a {
-            color: #e9cf6f;
-            text-decoration: none;
-            font-weight: bold;
-            word-wrap: break-word;
-            word-break: break-all;
-        }
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-        .cta-button-contact {
-            display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.2em;
-            color: rgb(34, 34, 34);
-            background: #e9cf6f;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .cta-button-contact:hover {
-            background: #bea859;
-            transform: scale(1.05);
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-        }
-        /* Responsividade */
-        @media (max-width: 768px) {
-            .contact-container {
-                padding: 0 15px;
-            }
-            .contact-details {
-                flex-direction: column;
-            }
-            .section-contact h2 {
-                font-size: 2em;
-            }
-            .section-contact p {
-                font-size: 1em;
-            }
-        }
-        @media (max-width: 480px) {
-            .contact-container {
-                padding: 0 10px;
-            }
-            .contact-item p {
-                font-size: 1em;
-            }
-            .cta-button-contact {
-                font-size: 1em;
-                padding: 10px 20px;
-            }
-        }
         /* Footer */
         .site-footer {
             background: #0e1a2b;
@@ -789,191 +406,26 @@
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h2>Uma Jornada Criativa de 60 Dias</h2>
+            <h2>Parabéns aos grandes vencedores do Maricá Games JAM!</h2>
             <p>
-                Participe do <span class="highlight">Maricá Games JAM 2025</span>!<br>
-                De <strong>10 de maio a 12 de julho</strong>, desenvolva em equipe o jogo <span class="highlight">"As Aventuras de Mumbuquinha 2.0"</span>, com oficinas, mentorias e premiação em dinheiro.
+                Foram dias intensos de muita criatividade, esforço e colaboração. O desafio foi grande, mas a recompensa veio e, com ela, o reconhecimento do talento de cada equipe participante.
             </p>
-            <a href="./TERMO_DE_COMPROMISSO_E_RESPONSABILIDADE_MARICA_GAMES_JAM_2025_FINAL.pdf" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background:rgb(71, 68, 228); color: rgb(255, 255, 255); font-weight: bold; margin: 10px 5px; display: block; text-align: center;">
-                📄 TERMO DE COMPROMISSO E RESPONSABILIDADE
-            </a>
-            <a href="./LISTAGEM_FINAL_DAS_EQUIPES_CLASSIFICADAS_MARICA_GAMES_JAM_2025_1_ED.pdf" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background: #0da83e; color: white; font-weight: bold; margin: 10px 5px; display: block; text-align: center;">
-                📄 LISTA FINAL DAS EQUIPES CLASSIFICADAS
-            </a>
-            <a href="./LISTAGEM_FINAL_CLASSIFICADOS_E_NAO_CLASSIFICADOS_MARICA_GAMES_JAM_2025_1_ED.pdf" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background: #e9cf6f; color: rgb(0, 0, 0); font-weight: bold; margin: 10px 5px; display: block; text-align: center;">
-                📄 LISTA DE CLASSIFICADOS
-            </a>
-            <a href="./MARICA_GAMES_JAM_1_EDICAO_TERMOS_DO_REGULAMENTO_V2.pdf" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background: #a80d9d; color: white; font-weight: bold; margin: 10px 5px; display: block; text-align: center;">
-                📄 Acesse o Regulamento
-            </a>
-            <a href="https://codemars-my.sharepoint.com/:u:/g/personal/maricagamesjam_codemar-sa_com_br/EehfH2l8xiJOukYOtIB25skBxd3vl23qJH2zBDW4Eb2_zw?e=QmXdNJ" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background: #4285F4; color: white; font-weight: bold; margin: 10px 5px;">
-                🎮 Versão Mumbuquinha 1.0 PC
-            </a>
-            <a href="https://play.google.com/store/apps/details?id=com.MumbuquinhaGames.AsAventurasdoMumbuquinhaNew" 
-                class="cta-button-hero" 
-                target="_blank" 
-                style="background: #4285F4; color: white; font-weight: bold; margin: 10px 5px;">
-                🎮 Versão Mumbuquinha 1.0 Mobile
-            </a>
         </div>
     </div>
 
-    <section class="section-about" id="about">
-        <div class="about-container">
-            <div class="about-text">
-                <h2>Desafio: Mumbuquinha 2.0</h2>
-                <p>
-                    Prepare-se para uma jornada de criação e descobertas com <strong>"As Aventuras do Mumbuquinha 2.0"</strong>. O desafio convida os participantes a reimaginar o jogo original com uma abordagem mais envolvente, educativa e atual.
-                </p>
-                <p>
-                    Ao longo da Game Jam, serão explorados <span class="highlight">temas transformadores</span> que servirão como inspiração para a criação de experiências únicas e significativas.
-                </p>
-                <p>
-                    A estrutura do evento, com oficinas, mentorias e dinâmicas práticas, será revelada gradualmente. O objetivo é garantir que todas as equipes tenham condições iguais de participação.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="section-schedule" id="cronograma">
-        <div class="schedule-container">
-            <h2 class="schedule-title">📅 Cronograma do Evento</h2>
-            <ul class="schedule-list">
-            <li><strong>07/04 a 06/05:</strong> Inscrição</li>
-            <li><strong>09/05:</strong> Divulgação da lista de classificados</li>
-            <li><strong>10/05:</strong> Abertura oficial + Workshops (Presencial)</li>
-            <li><strong>12/05 a 13/06:</strong> Mentorias (Online)</li>
-            <li><strong>14/06:</strong> Segunda etapa com oficinas e networking (Presencial)</li>
-            <li><strong>16/06 a 11/07:</strong> Continuação da etapa online</li>
-            <li><strong>08/07:</strong> Prazo final para envio dos projetos</li>
-            <li><strong>09 e 10/07:</strong> Avaliação dos jogos</li>
-            <li><strong>12/07:</strong> Apresentações finais + Cerimônia de Premiação (Presencial)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section-awards" id="premiacao">
+    <section class="section-awards" id="resultados">
         <div class="awards-container">
-            <h2>🏆 Premiação</h2>
-            <p class="awards-subtitle">
-                Confira os prêmios que as melhores equipes irão receber no final do <span class="highlight">Maricá Games JAM 2025</span>.
-            </p>
-            <div class="awards-list">
-                <div class="award-item"><strong>1º Lugar:</strong> Troféu + R$30.000,00</div>
-                <div class="award-item"><strong>2º Lugar:</strong> R$5.000,00</div>
-                <div class="award-item"><strong>3º Lugar:</strong> R$2.500,00</div>
+            <h2>🎉 Resultados Finais</h2>
+            <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
+                <img src="./imgs/1_LUGAR.png" alt="1º lugar - Eclipse Studio" style="max-width: 100%; max-width: 500px; width: 100%;">
+                <img src="./imgs/2_LUGAR.png" alt="2º lugar - Reach Games" style="max-width: 100%; max-width: 500px; width: 100%;">
+                <img src="./imgs/3_LUGAR.png" alt="3º lugar - D+1 Design & Jogos" style="max-width: 100%; max-width: 500px; width: 100%;">
             </div>
-            <p style="color: #FFFFFF; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-                A premiação será realizada durante a cerimônia de encerramento em <strong>12 de julho de 2025</strong>.
+            <p style="color: #ffffff; font-weight: 500; margin-top: 20px;">
+                A Codemar agradece a todos que fizeram parte dessa jornada incrível. Nos vemos no próximo Maricá Games JAM! 💡
             </p>
         </div>
     </section>
-    
-    <section class="section-criteria" id="criterios">
-        <div class="criteria-container">
-            <h2>🔍 Critérios de Avaliação</h2>
-            <p class="criteria-subtitle">
-                Entenda como os projetos serão avaliados pela banca julgadora. Cada critério possui um peso específico na nota final.
-            </p>
-            <div class="criteria-cards">
-                <div class="criteria-card">
-                    <span class="criteria-percent">25%</span>
-                    <h3>Adaptação ao Tema</h3>
-                    <p>Conexão com o tema <strong>"As Aventuras de Mumbuquinha 2.0"</strong>, criatividade e abordagem da narrativa.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">25%</span>
-                    <h3>Jogabilidade</h3>
-                    <p>Controles acessíveis, mecânicas bem implementadas e experiência fluida de jogo.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">20%</span>
-                    <h3>Originalidade</h3>
-                    <p>Inovação nas ideias, novos recursos e propostas únicas para o jogo.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">12%</span>
-                    <h3>Diversão</h3>
-                    <p>Capacidade do jogo entreter, engajar e cativar os jogadores.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">8%</span>
-                    <h3>Gráfico/Visual</h3>
-                    <p>Estética, identidade visual e harmonia entre os elementos gráficos.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">5%</span>
-                    <h3>Áudio</h3>
-                    <p>Qualidade da trilha sonora, efeitos sonoros e imersão sonora.</p>
-                </div>
-                <div class="criteria-card">
-                    <span class="criteria-percent">5%</span>
-                    <h3>Oficinas & Mentorias</h3>
-                    <p>Participação nas oficinas e mentorias realizadas ao longo da JAM.</p>
-                </div>
-            </div>
-
-            <div class="criteria-details mt-4"> 
-                <h3>📋 Detalhamento dos Critérios</h3>
-                <p><strong>🎯 Game Design:</strong> Jogabilidade intuitiva, níveis bem estruturados e desafios criativos como puzzles, combate dinâmico ou exploração.</p>
-                <p><strong>🧭 UI/UX:</strong> Interface clara, fluida e com feedbacks adequados para guiar o jogador.</p>
-                <p><strong>🎨 Arte e Visual:</strong> Estilo gráfico coerente com a proposta do jogo, com personagens e cenários bem elaborados.</p>
-                <p><strong>🎧 Áudio Design:</strong> Trilha sonora e efeitos sonoros que enriquecem a imersão e acompanham a narrativa.</p>
-                <p><strong>🎮 Gameplay:</strong> Controles responsivos e ausência de bugs, proporcionando uma experiência de jogo agradável.</p>
-
-                <h4 class="mt-4">📌 Requisitos de Compatibilidade</h4>
-                <p>✔️ Versão funcional para computador (Windows, Intel i3, 4GB RAM)</p>
-                <p>✔️ Versão instalável para Android ou iOS (APK ou equivalente)</p>
-
-                <h4 class="mt-4">⚖️ Sistema de Avaliação</h4>
-                <p>Cada critério será avaliado de 0 a 10 pontos. A nota final será a média das avaliações dos jurados. A organização pode optar por não divulgar as notas individuais.</p>
-
-                <h4 class="mt-4">🏁 Critérios de Desempate</h4>
-                <p>- Pelo menos um integrante da equipe ser morador de Maricá</p>
-                <p>- Melhor adaptação ao tema da JAM</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="section-mentors" id="mentores">
-        <div class="mentors-container">
-            <h2>🧑‍🏫 Mentores e Oficinas</h2>
-            <p class="mentors-subtitle">Durante a jornada, você contará com especialistas para te guiar nas áreas de design, narrativa, testes, som e muito mais!</p>
-            <div class="mentor-grid">
-                <div class="mentor-card">
-                    <h3>🎨 João Silva</h3>
-                    <p>Especialista em Game Design e Desenvolvimento de Jogos 2D. Atua há mais de 10 anos no setor criativo de jogos indie.</p>
-                </div>
-                <div class="mentor-card">
-                    <h3>📝 Maria Oliveira</h3>
-                    <p>Roteirista premiada com foco em Narrativa Interativa e Storytelling para experiências imersivas.</p>
-                </div>
-                <div class="mentor-card">
-                    <h3>🧠 Paula Andrade</h3>
-                    <p>Pesquisadora em Inteligência Emocional e Educação em Games. Conduzirá oficinas com foco humano e educacional.</p>
-                </div>
-                <div class="mentor-card">
-                    <h3>🔊 Carlos Lima</h3>
-                    <p>Produtor de áudio e efeitos sonoros, responsável por trilhas originais em projetos educativos e culturais.</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <section class="section-sponsors" id="patrocinadores">
         <div class="sponsors-container">
@@ -982,9 +434,7 @@
                 Agradecemos aos nossos parceiros que tornam o <span class="highlight">Maricá Games JAM 2025</span> possível!
             </p>
     
-            <!-- Patrocinador Prime -->
             <div class="sponsors-tier">
-                <!-- <h3 class="sponsor-tier-title">Patrocinador Prime</h3> -->
                 <div class="sponsors-patrocinios">
                     <div class="sponsor-item">
                         <a href="https://www.adaptideas.com.br/" target="_blank"><img src="./imgs/patrocinios/prime/adaptideas.png" alt="AdaptIdeas"></a>
@@ -1001,9 +451,7 @@
                 </div>
             </div>
 
-            <!-- Patrocinador Prata -->
             <div class="sponsors-tier">
-                <!-- <h3 class="sponsor-tier-title">Patrocinador Prata</h3> -->
                 <div class="sponsors-patrocinios">
                     <div class="sponsor-item">
                         <a href="https://neobiz.com.br/" target="_blank"><img src="./imgs/patrocinios/prata/neobiz.png" alt="NeoBiz"></a>
@@ -1011,9 +459,7 @@
                 </div>
             </div>
 
-            <!-- Patrocinador Bronze -->
             <div class="sponsors-tier">
-                <!-- <h3 class="sponsor-tier-title">Patrocinador Bronze</h3> -->
                 <div class="sponsors-patrocinios">
                     <div class="sponsor-item">
                         <a href="https://tesouroverde.global/" target="_blank"><img src="./imgs/patrocinios/bronze/bmtca.png" alt="Tesouro Verde"></a>
@@ -1023,24 +469,10 @@
         </div>
     </section>
 
-    <section class="section-contact" id="contact">
-        <div class="contact-container">
-            <h2>Contato</h2>
-            <div class="contact-details">
-                <div class="contact-item">
-                    <p><a href="mailto:maricagamesjam@codemar-sa.com.br">maricagamesjam@codemar-sa.com.br</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-logo">
                 <h3>Maricá Games JAM 2025</h3>
-            </div>
-            <div class="footer-links">
-                <a href="#about">Sobre</a>
-                <a href="#contact">Contato</a>
             </div>
         </div>
         <div class="footer-bottom">
