@@ -18,9 +18,16 @@
     <link rel="apple-touch-icon" href="/imgs/icon_mumbuquinha_apple.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: 'Pangram Medium';
+            src: url('fonts/Pangram-FullFamily-FreeForPersonalUse/Pangram-Medium.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
-            font-family: 'Roboto', sans-serif;
+            font-family: 'Pangram Medium', sans-serif;
             background-color: #0e1a2b;
             color: #f4f4f4;
             line-height: 1.6;
@@ -377,6 +384,23 @@
             padding-top: 10px;
             font-size: 0.8em;
         }
+
+        .awards-images {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .awards-images img {
+            max-width: 100%;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            flex: 1 1 300px;
+        }
     </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L9XJDW3KQN"></script>
@@ -416,10 +440,10 @@
     <section class="section-awards" id="resultados">
         <div class="awards-container">
             <h2>🎉 Resultados Finais</h2>
-            <div style="display: flex; flex-direction: column; align-items: center; gap: 30px;">
-                <img src="./imgs/1_LUGAR.png" alt="1º lugar - Eclipse Studio" style="max-width: 100%; max-width: 500px; width: 100%;">
-                <img src="./imgs/2_LUGAR.png" alt="2º lugar - Reach Games" style="max-width: 100%; max-width: 500px; width: 100%;">
-                <img src="./imgs/3_LUGAR.png" alt="3º lugar - D+1 Design & Jogos" style="max-width: 100%; max-width: 500px; width: 100%;">
+            <div class="awards-images">
+                <img src="./imgs/1_LUGAR.png" alt="1º lugar - Eclipse Studio">
+                <img src="./imgs/2_LUGAR.png" alt="2º lugar - Reach Games">
+                <img src="./imgs/3_LUGAR.png" alt="3º lugar - D+1 Design & Jogos">
             </div>
             <p style="color: #ffffff; font-weight: 500; margin-top: 20px;">
                 A Codemar agradece a todos que fizeram parte dessa jornada incrível. Nos vemos no próximo Maricá Games JAM! 💡
